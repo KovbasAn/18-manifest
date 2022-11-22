@@ -59,7 +59,11 @@ body {
     bottom: -5px;
   }
 
-  .nav__item_burger {
+  #expand-toggle {
+    display: none;
+  }
+
+  #expand-btn {
     display: none;
   }
 }

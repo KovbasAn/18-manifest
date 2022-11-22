@@ -5,6 +5,10 @@
   .header {
     padding: 0px 10px;
   }
+  .header .nav__menu {
+    top: -502px;
+    height: 502px;
+  }
   .hero__title {
     font-size: 30px;
     top: 70px;

@@ -5,12 +5,32 @@
   .header {
     height: 60px;
     padding: 0 34px;
+    position: relative;
   }
   .header .nav__menu {
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    top: -400px;
+    left: -1%;
+    width: 102%;
+    height: 400px;
+    transition: 0.8s ease;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 30px;
   }
-  .header .nav__item_burger {
+  .header .nav__item {
+    margin: 0 auto;
+  }
+  .header #expand-btn {
     display: block;
+  }
+  .header #expand-btn:hover {
+    cursor: pointer;
+  }
+  .header #expand-toggle:checked ~ .nav__menu {
+    transform: translateY(calc(100% + 60px));
   }
   .hero__title {
     font-size: 36px;

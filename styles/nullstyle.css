@@ -52,7 +52,7 @@ a, a:visited {
   text-decoration: none;
 }
 
-a:visited {
+a:visited, i:visited {
   color: inherit;
 }
 
