@@ -1,0 +1,100 @@
+@media (max-width: 1440px) {
+  body {
+    width: 768px;
+  }
+  .header {
+    height: 60px;
+    padding: 0 34px;
+    position: relative;
+  }
+  .header .nav__menu {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    top: -400px;
+    left: -1%;
+    width: 102%;
+    height: 400px;
+    transition: 0.8s ease;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 30px;
+  }
+  .header .nav__item {
+    margin: 0 auto;
+  }
+  .header #expand-btn {
+    display: block;
+  }
+  .header #expand-btn:hover {
+    cursor: pointer;
+  }
+  .header #expand-toggle:checked ~ .nav__menu {
+    transform: translateY(calc(100% + 60px));
+  }
+  .hero__title {
+    font-size: 36px;
+    top: 30px;
+    left: 34px;
+    line-height: 50px;
+  }
+  .section {
+    padding: 0 34px;
+    margin-bottom: 70px;
+  }
+  .view-all {
+    right: 34px;
+  }
+  .blog .section-item__image {
+    height: 280px;
+  }
+  .blog .section-item__text {
+    padding: 0;
+  }
+  .blog .section-item__description {
+    margin-top: 35px;
+  }
+  .blog .section-item:last-child .section-item__text {
+    padding: 0;
+  }
+  .latest-posts .section-items {
+    flex-direction: column;
+  }
+  .latest-posts .section-items .section-item {
+    flex-direction: row;
+    width: 100%;
+  }
+  .latest-posts .section-items .section-item .section-item__text {
+    width: 100%;
+  }
+  .latest-posts .section-items .section-item .section-item__image {
+    height: 240px;
+  }
+  .latest-posts .section-items .section-item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .most-popular {
+    margin-bottom: 160px;
+  }
+  .most-popular .section-items .section-item .section-item__image {
+    height: 160px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info .info-article {
+    width: 100%;
+    text-align: right;
+    margin-top: 40px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .contacts {
+    text-align: center;
+  }
+  .footer .socials {
+    padding-top: 30px;
+  }
+}/*# sourceMappingURL=style768.css.map */
